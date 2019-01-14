@@ -192,6 +192,9 @@ debug_level=2
 # OpenShift repository configuration
 #openshift_additional_repos=[{'id': 'openshift-origin-copr', 'name': 'OpenShift Origin COPR', 'baseurl': 'https://copr-be.cloud.fedoraproject.org/results/maxamillion/origin-next/epel-7-$basearch/', 'enabled': 1, 'gpgcheck': 1, 'gpgkey': 'https://copr-be.cloud.fedoraproject.org/results/maxamillion/origin-next/pubkey.gpg'}]
 #openshift_repos_enable_testing=false
+#Enable own repository (necessary for disconnected installation behind Foreman/Katello
+#openshift_repos_base=http://mirror.centos.org/centos/7/paas/x86_64/
+
 
 # If the image for etcd needs to be pulled from anywhere else than registry.redhat.io, e.g. in
 # a disconnected and containerized installation, use osm_etcd_image to specify the image to use:
